@@ -96,7 +96,25 @@ void explainVector()
     cout << i << " ";
   }
   cout << endl;
+
+  // swap
+  vector<int> vec3 = {10, 20};
+  vector<int> vec4 = {30, 40};
+  swap(vec3, vec4);
+  cout << "after swapping vec3 elements are -> ";
+  for (auto i : vec3)
+  {
+    cout << i << " ";
+  }
+  cout << endl;
+  cout << "after swapping vec3 elements are -> ";
+  for (auto i : vec4)
+  {
+    cout << i << " ";
+  }
+  cout << endl;
 }
+
 int main()
 {
   explainVector();
