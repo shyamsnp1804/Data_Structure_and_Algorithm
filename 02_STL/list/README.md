@@ -23,7 +23,7 @@ A list in C++ STL is implemented as a **doubly-linked list**, allowing efficient
 - When stable iterators are important
 
 
-## functions and their uses ->
+## functions and their uses 
 
 ## push_front() vs emplace_front()
 
