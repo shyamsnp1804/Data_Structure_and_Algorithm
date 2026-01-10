@@ -29,25 +29,25 @@ This allows it to grow and shrink efficiently from both ends.
 
 ### Insertion
 
-d.push_back(x);
-d.push_front(x);
-d.emplace_back(x);
-d.emplace_front(x);
+- d.push_back(x);
+- d.push_front(x);
+- d.emplace_back(x);
+- d.emplace_front(x);
 
 ### Deletion
-d.pop_back();
-d.pop_front();
-d.clear();
+- d.pop_back();
+- d.pop_front();
+- d.clear();
 
 ### Access
-d.front();
-d.back();
-d[i];      // Random access supported
-d.at(i);
+- d.front();
+- d.back();
+- d[i];      // Random access supported
+- d.at(i);
 
 ### Capacity
-d.size();
-d.empty();
+- d.size();
+- d.empty();
 
 ### Time Complexity
 
