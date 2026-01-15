@@ -53,4 +53,12 @@ This ensures that the highest priority element can be accessed quickly.
 
 ### for Min Heap
 
-- priority_queue<int, vector<int>, greater<int>> pq;
+- priority_queue<int, vector<int>, greater<int>> pq; // smallest element on top
+
+### Time Complexity
+
+| Operation | Time     |
+| --------- | -------- |
+| push()    | O(log n) |
+| pop()     | O(log n) |
+| top()     | O(1)     |

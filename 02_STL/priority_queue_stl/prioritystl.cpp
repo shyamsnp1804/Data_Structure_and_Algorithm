@@ -12,8 +12,14 @@ void explainPriorityQueue()
   pq.push(18);
   pq.push(14);
 
-  cout << pq.top() << endl;
-
+  cout << "top element is -> " << pq.top() << endl;
+  cout << "printing element in descending order (max_heap) -> ";
+  while (pq.empty() == false)
+  {
+    cout << pq.top() << " ";
+    pq.pop();
+  }
+  cout << endl;
   // Min Heap
   priority_queue<int, vector<int>, greater<int>> pq2; // smallest element on top
   pq2.push(10);
@@ -22,7 +28,14 @@ void explainPriorityQueue()
   pq2.push(18);
   pq2.push(14);
 
-  cout << pq2.top() << endl;
+  cout << "top element is -> " << pq2.top() << endl;
+  cout << "printing element in ascending order (min_heap) -> ";
+  while (pq2.empty() == false)
+  {
+    cout << pq2.top() << " ";
+    pq2.pop();
+  }
+  cout << endl;
 }
 
 int main()
