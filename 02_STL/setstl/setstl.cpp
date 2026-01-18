@@ -13,6 +13,16 @@ void explainSet()
   {
     cout << i << " ";
   }
+  cout << endl;
+  auto i = st.find(14);
+  if (i != st.end())
+  {
+    cout << "found " << *i << " ";
+  }
+  else
+  {
+    cout << "not found";
+  }
 }
 
 int main()
