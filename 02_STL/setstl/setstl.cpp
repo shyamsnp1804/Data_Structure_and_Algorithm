@@ -8,6 +8,11 @@ void explainSet()
   st.insert(14);
   st.insert(12);
   st.insert(13);
+  st.insert(13);
+
+  // count
+  cout << st.count(13) << endl; // st.count() --> if element exist it will return 1 else 0
+  cout << st.count(11) << endl; // return 0
   cout << "elements of set are -> ";
   for (auto i : st)
   {
