@@ -60,6 +60,18 @@ void explainSet()
   {
     cout << "element not found";
   }
+  cout << endl;
+
+  // deleting specific element
+  auto it1 = st.begin();
+  it1++;
+  auto it2 = st.end();
+  it2--;
+  st.erase(it1, it2);
+  for (auto iter : st)
+  {
+    cout << iter << " "; // o/p -> 12 16
+  }
 }
 
 int main()
