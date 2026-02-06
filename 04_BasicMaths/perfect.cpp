@@ -27,7 +27,9 @@ public:
 
 int main()
 {
-  int n = 6;
+  int n;
+  cout << "enter number : ";
+  cin >> n;
 
   Solution sol;
 
