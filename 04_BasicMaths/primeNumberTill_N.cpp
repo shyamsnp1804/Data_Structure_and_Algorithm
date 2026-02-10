@@ -25,10 +25,13 @@ int main()
   cin >> n;
 
   Solution sol;
-  bool ans = sol.isPrime(n);
-  if (ans)
-    cout << n << " is a prime number";
-  else
-    cout << n << " is not a prime number";
+
+  cout << "Prime numbers till " << n << " are:\n";
+  for (int i = 2; i <= n; i++)
+  {
+    if (sol.isPrime(i))
+      cout << i << " ";
+  }
+
   return 0;
 }
