@@ -1,6 +1,8 @@
-#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
 
-int main() {
-  std::cout << "hello shyam narayan pandey" << std::endl;
+int main()
+{
+  cout << "Shyam Narayan Pandey";
   return 0;
 }
