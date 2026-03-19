@@ -8,7 +8,7 @@ public:
   {
     int n = nums.size(); // size of array
 
-    int j = 0;
+    int j = 0;  // j → position to place next non-zero
 
     for (int i = 0; i < n; i++)
     {
