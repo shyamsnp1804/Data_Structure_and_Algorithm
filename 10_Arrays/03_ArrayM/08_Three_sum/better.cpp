@@ -23,7 +23,7 @@ public:
           sort(temp.begin(), temp.end()); // remove duplicate
           st.insert(temp);
         }
-        // if thirdEle is not present in hashset then insert that thirdEle in hash set
+        // if thirdEle is not present then Insert the current element into hashset for future checks
         hashSet.insert(nums[j]);
       }
     }
