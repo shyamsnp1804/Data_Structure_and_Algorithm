@@ -6,31 +6,26 @@ class Solution
 public:
   int floorSqrt(int n)
   {
-    int low = 0, high = n; // Search space from 0 to n
-    int ans = 0;           // Variable to store the final answer
+    if (n == 0)
+      return 0; // edge case
 
-    // Binary search loop
+    int low = 1, high = n;
+    int ans = 0;
+
     while (low <= high)
     {
-      // Calculate mid to avoid overflow
       int mid = low + (high - low) / 2;
 
-      // If mid^2 is less than or equal to n,
-      // then mid can be a possible answer
       if (mid <= n / mid)
       {
-        ans = mid;     // Store the current valid answer
-        low = mid + 1; // Move to the right to find a larger value
+        ans = mid;
+        low = mid + 1;
       }
       else
       {
-        // If mid^2 is greater than n,
-        // discard the right half
         high = mid - 1;
       }
     }
-
-    // Return the floor value of square root
     return ans;
   }
 };
