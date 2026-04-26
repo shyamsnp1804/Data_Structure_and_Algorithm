@@ -31,10 +31,10 @@ public:
 
     while (low <= high)
     {
-      int mid = low + (high)-low / 2;
+      int mid = low + (high - low) / 2;
 
       // If arr[mid] is the peak
-      if (arr[mid - 1] < arr[mid] && arr[mid] > arr[mid + 1])
+      if (arr[mid] > arr[mid - 1]  && arr[mid] > arr[mid + 1])
         return mid;
 
       // If we are in the left
